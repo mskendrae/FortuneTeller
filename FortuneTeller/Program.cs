@@ -29,9 +29,16 @@ namespace FortuneTeller
             string royGbiv = Console.ReadLine());
 
                if (royGbiv.ToLower() == "help")
-                     {
-
-                     }
+                 {
+                Console.WriteLine("The ROYGBIV are as follows. Please type the name of your favorite color.");
+                Console.WriteLine("1. Red");
+                Console.WriteLine("2. Orange");
+                Console.WriteLine("3. Yellow");
+                Console.WriteLine("4. Green");
+                Console.WriteLine("5. Blue");
+                Console.WriteLine("6. Indigo");
+                Console.WriteLine("7. Violet");
+            }
 
 
             
