@@ -28,8 +28,8 @@ namespace FortuneTeller
             Console.WriteLine("Please enter your favorite ROYGBIV color. Type \"Help\" to get a list of the ROYGBIV Colors.");
             string royGbiv = Console.ReadLine());
 
-               if (royGbiv.ToLower() == "help")
-                 {
+            if (royGbiv.ToLower() == "help")
+            {
                 Console.WriteLine("The ROYGBIV are as follows. Please type the name of your favorite color.");
                 Console.WriteLine("1. Red");
                 Console.WriteLine("2. Orange");
@@ -38,10 +38,49 @@ namespace FortuneTeller
                 Console.WriteLine("5. Blue");
                 Console.WriteLine("6. Indigo");
                 Console.WriteLine("7. Violet");
+
+            }
+            else if (royGbiv.ToLower() == "red")
+            {
+                string vehicle = "boat";
             }
 
+            else if (royGbiv.ToLower() == "Orange")
+            {
+                string vehicle = "car";
 
-            
+            }
+
+            else if (royGbiv.ToLower() == "yellow")
+            {
+
+                string vehicle = "plane";
+            }
+
+            else if (royGbiv.ToLower() == "green")
+            {
+
+                string vehicle = "motorcycle";
+            }
+
+            else if (royGbiv.ToLower() == "blue")
+            {
+
+                string vehicle = "glider";
+
+            }
+            else if (royGbiv.ToLower() == "indigo")
+            {
+
+                string vehicle = "bicycle";
+            }
+
+            else if (royGbiv.ToLower() == "violet")
+            {
+                string vehicle = "sea plane";
+
+            }
+
 
         }
     }
