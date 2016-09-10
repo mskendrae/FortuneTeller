@@ -20,7 +20,7 @@ namespace FortuneTeller
             string lastName = Console.ReadLine();
 
             Console.WriteLine("Please enter your age:");
-            int userAge = Console.ReadLine();
+            int userAge = int.Parse(Console.ReadLine());
             int retire = 0;
 
                 if (userAge % 2 == 0 )
@@ -33,15 +33,35 @@ namespace FortuneTeller
                     {
                       int oddAge = userAge;
 
-                        retire = 20; 
+                      retire = 20; 
 
                     }
 
 
             Console.WriteLine("Please enter the month you were born 1 to 12 no leading zeros please");
-            string bMonth = (Console.ReadLine());
-            
+              int bMonth = int.Parse(Console.ReadLine());
+              int savings = 0
+                if (bMonth >= 1 && bMonth <= 4)
+                     {
+                          savings = 100000;
 
+                     }
+                else if (bMonth >=5 && bMonth <= 8)
+                    {
+
+                        savings = 200000;
+                    }
+
+                else if (bMonth >=9 && bMonth <=12)
+                     {
+
+                        savings = 500000;
+                      }
+                else
+                      {
+                          savings = 0;
+
+                      } 
             Console.WriteLine("Please enter your favorite ROYGBIV color. Type \"Help\" to get a list of the ROYGBIV Colors.");
             string royGbiv = Console.ReadLine();
             string vehicle = "yellow sub";
@@ -63,26 +83,26 @@ namespace FortuneTeller
 
             if (royGbiv.ToLower() == "red")
             {
-                vehicle = "boat";
+                vehicle = "yaht";
             }
 
             else if (royGbiv.ToLower() == "Orange")
             {
-                 vehicle = "car";
+                 vehicle = "classic Mustang";
 
             }
 
             else if (royGbiv.ToLower() == "yellow")
             {
 
-                 vehicle = "plane";
+                 vehicle = "private Jet";
 
             }
 
             else if (royGbiv.ToLower() == "green")
             {
 
-                 vehicle = "motorcycle";
+                 vehicle = "Harley Davidson";
 
             }
 
@@ -95,7 +115,7 @@ namespace FortuneTeller
             else if (royGbiv.ToLower() == "indigo")
             {
 
-                vehicle = "bicycle";
+                vehicle = "Shwinn bicycle";
             }
 
             else if (royGbiv.ToLower() == "violet")
