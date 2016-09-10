@@ -20,10 +20,27 @@ namespace FortuneTeller
             string lastName = Console.ReadLine();
 
             Console.WriteLine("Please enter your age:");
-            string userAge = Console.ReadLine();
+            int userAge = Console.ReadLine();
+            int retire = 0;
 
-            Console.WriteLine("Please enter the month you were born 1 to 12.");
-            int bMonth = int.Parse(Console.ReadLine());
+                if (userAge % 2 == 0 )
+                   {
+                    int evenAge = userAge;
+
+                     retire = 10;
+                    }
+                else
+                    {
+                      int oddAge = userAge;
+
+                        retire = 20; 
+
+                    }
+
+
+            Console.WriteLine("Please enter the month you were born 1 to 12 no leading zeros please");
+            string bMonth = (Console.ReadLine());
+            
 
             Console.WriteLine("Please enter your favorite ROYGBIV color. Type \"Help\" to get a list of the ROYGBIV Colors.");
             string royGbiv = Console.ReadLine();
@@ -40,10 +57,11 @@ namespace FortuneTeller
                 Console.WriteLine("6. Indigo");
                 Console.WriteLine("7. Violet");
                 Console.WriteLine("Please enter color name and not the number.");
-                string royGbiv = Console.ReadLine();
+                royGbiv = Console.ReadLine();
 
             }
-            else if (royGbiv.ToLower() == "red")
+
+            if (royGbiv.ToLower() == "red")
             {
                 vehicle = "boat";
             }
@@ -88,7 +106,7 @@ namespace FortuneTeller
 
 
                         
-            Console.WriteLine(vehicle);
+          
 
         }
     }
