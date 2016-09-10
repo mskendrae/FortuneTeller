@@ -26,11 +26,12 @@ namespace FortuneTeller
             int bMonth = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Please enter your favorite ROYGBIV color. Type \"Help\" to get a list of the ROYGBIV Colors.");
-            string royGbiv = Console.ReadLine());
+            string royGbiv = Console.ReadLine();
+            string vehicle = "yellow sub";
 
             if (royGbiv.ToLower() == "help")
             {
-                Console.WriteLine("The ROYGBIV are as follows. Please type the name of your favorite color.");
+                Console.WriteLine("The ROYGBIV are as follows. Please type the name of your favorite color not the number.");
                 Console.WriteLine("1. Red");
                 Console.WriteLine("2. Orange");
                 Console.WriteLine("3. Yellow");
@@ -38,49 +39,56 @@ namespace FortuneTeller
                 Console.WriteLine("5. Blue");
                 Console.WriteLine("6. Indigo");
                 Console.WriteLine("7. Violet");
+                Console.WriteLine("Please enter color name and not the number.");
+                string royGbiv = Console.ReadLine();
 
             }
             else if (royGbiv.ToLower() == "red")
             {
-                string vehicle = "boat";
+                vehicle = "boat";
             }
 
             else if (royGbiv.ToLower() == "Orange")
             {
-                string vehicle = "car";
+                 vehicle = "car";
 
             }
 
             else if (royGbiv.ToLower() == "yellow")
             {
 
-                string vehicle = "plane";
+                 vehicle = "plane";
+
             }
 
             else if (royGbiv.ToLower() == "green")
             {
 
-                string vehicle = "motorcycle";
+                 vehicle = "motorcycle";
+
             }
 
             else if (royGbiv.ToLower() == "blue")
             {
 
-                string vehicle = "glider";
+                vehicle = "glider";
 
             }
             else if (royGbiv.ToLower() == "indigo")
             {
 
-                string vehicle = "bicycle";
+                vehicle = "bicycle";
             }
 
             else if (royGbiv.ToLower() == "violet")
             {
-                string vehicle = "sea plane";
+                vehicle = "sea plane";
 
             }
 
+
+                        
+            Console.WriteLine(vehicle);
 
         }
     }
