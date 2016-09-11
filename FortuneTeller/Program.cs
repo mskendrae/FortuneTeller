@@ -10,14 +10,11 @@ namespace FortuneTeller
     {
         static void Main(string[] args)
         {
-            while (true)
-            { string quitApp = "GO";
-
+            
                 Console.WriteLine("Welcome to my Fortune Teller App.  With a little bit of information from you in will be able to tell your future.");
                 Console.WriteLine("If you wish to Quit this application at any time please type \"Quit\" ");
     
-               //string QuitApp == "Go";
-
+               
 
                 Console.WriteLine("Please enter your First Name:");
                 string firstName = Console.ReadLine();
@@ -168,11 +165,6 @@ namespace FortuneTeller
 
                 Console.WriteLine(firstName + " " + lastName + " will retire in " + retire + " with " + savings + " in the bank, a vacation home in " + vacationLocation + " and a " + vehicle);   
 
-                if (quitApp.ToLower() == "quit" ||  quitApp.ToLower() == "exit")
-                {
-
-                    Console.WriteLine("Nobody likes a quitter!")
-                     Environment.Exit
                 }
             }
         }
