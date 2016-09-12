@@ -12,10 +12,7 @@ namespace FortuneTeller
         {
             
                 Console.WriteLine("Welcome to my Fortune Teller App.  With a little bit of information from you in will be able to tell your future.");
-                Console.WriteLine("If you wish to Quit this application at any time please type \"Quit\" ");
-    
-               
-
+        
                 Console.WriteLine("Please enter your First Name:");
                 string firstName = Console.ReadLine();
 
